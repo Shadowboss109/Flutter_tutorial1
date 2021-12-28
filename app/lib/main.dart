@@ -12,14 +12,27 @@ class Home extends StatelessWidget {
     centerTitle: true,
     backgroundColor: Colors.red[600],
     ),
-    body: Center(
-    child:Icon(
-      Icons.airport_shuttle,
-      color:Colors.lightBlue,
-      size:50.0
-    ),
+    body: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      crossAxisAlignment: CrossAxisAlignment.start,
+
+      children: <Widget>[
+        Text('Hello, world'),
+        FlatButton(
+            onPressed: (){},
+            color: Colors.amber,
+            child: Text('click me')
+        ),
+        Container(
+
+          color:Colors.cyan,
+          padding: EdgeInsets.all(30.0),
+          child: Text('inside container'),
+        )
+      ],
 
     ),
+
     floatingActionButton : FloatingActionButton(
     onPressed: () {  },
   child:Text('click'),
